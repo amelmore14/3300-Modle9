@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <!-- First Name Input -->
+      <label for="fname"
+        >First Name
+        <input type="text" id="fname" name="fname" required autofocus />
+      </label>
+      <br />
+
+      <!-- Last Name Input -->
+      <label for="lname"
+        >Last Name
+        <input type="text" id="lname" name="lname" required />
+      </label>
+      <br />
+
+      <hr />
+
+      <!-- Ice Cream Flavor Selection -->
+      <label for="ice-cream">
+        Favorite flavor of ice cream:
+        <select name="ice-cream" id="ice-cream" required>
+          <option value="" selected>Choose one ...</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="swirl">Swirl</option>
+        </select>
+      </label>
+      <p></p>
+
+      <!-- Gender Radio Buttons -->
+      <label for="female">
+        <input type="radio" id="female" name="gender" value="female" required />
+        Female
+      </label>
+
+      <label for="male">
+        <input type="radio" id="male" name="gender" value="male" required />
+        Male
+      </label>
+
+      <label for="non-binary">
+        <input
+          type="radio"
+          id="non-binary"
+          name="gender"
+          value="non-binary"
+          required
+        />
+        Non-binary
+      </label>
+      <p></p>
+
+      <!-- Activities Checkboxes -->
+      <fieldset>
+        <legend>Choose your favorite activities</legend>
+        <label for="running">
+          <input
+            type="checkbox"
+            id="running"
+            name="activities"
+            value="running"
+            required
+          />
+          Running
+        </label>
+
+        <label for="biking">
+          <input
+            type="checkbox"
+            id="biking"
+            name="activities"
+            value="biking"
+            required
+          />
+          Biking
+        </label>
+
+        <label for="reading">
+          <input
+            type="checkbox"
+            id="reading"
+            name="activities"
+            value="reading"
+            required
+          />
+          Reading
+        </label>
+      </fieldset>
+
+      <!-- Submit Button / Next Page Button -->
+      <button onclick="window.location.href='elmore_p1.html';">
+        Start survey
+      </button>
+    </form>
+  </body>
+</html>
